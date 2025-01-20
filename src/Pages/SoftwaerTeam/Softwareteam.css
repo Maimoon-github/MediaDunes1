@@ -1,0 +1,100 @@
+.Softwareteam-hero {
+    background-image: url("https://s3-alpha-sig.figma.com/img/ace1/25ae/74987b61d171bcc9b90fd4cee558fed3?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fj3JuobMBAQBzgiI7RkEwHwwAsLYkb-SJysXov4VQcoNAbqyz0CKv0MHbY59JgfVCERWv9zS-Q3xzbypjip7jNcsH-GY6bzNX-G8GbxNTN-5Xk2GzEKHNS0iYbWugtjMbjXlFE~TPsqCnerJDUQVqA3cd~witpyg4nSkHUWkAJqQxYxGGwaqqdIRs~WjdmKcgxdjE3zTWvb6RsYWy9E4cRm1QELRl45xmjASjfArrFUbOvmKemIrhRREYjCyBqrF2uST8lWPSqS-ivlpE8A0cqiRlP5HTdVRq~04VXJU7G~u-VMyS7KXMDsd9s-QkLpmfzJFmmzgucS3MXCcX6nspA__");
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    color: #333;
+    height: 600px;
+  }
+
+
+
+
+  .dedicated-team-container {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: left;
+    max-width: 1190px;
+    margin: 0 auto;
+  }
+  
+  .dedicated-team-container h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #3a3a3a;
+    margin-bottom: 20px;
+  }
+  
+  .dedicated-team-container .intro {
+    font-size: 18px;
+    font-weight: 600;
+    color: #00000080;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+  
+  .dedicated-team-section {
+    margin-bottom: 40px;
+  }
+  
+  .dedicated-team-section h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #3a3a3a;
+    margin-bottom: 10px;
+  }
+  
+  .dedicated-team-section p {
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.8;
+  }
+  
+
+
+
+
+  /* Process */
+.proces-container{
+  background-color: #F2E7FE35;
+  padding: 50px 100px 50px 100px;
+}
+  .process-step {
+    text-align: left;
+    border-radius: 10px;
+  }
+/*   
+  .process-step:hover {
+    transform: translateY(-5px);
+  } */
+
+  .processcenter{
+    justify-content: center;
+  }
+  
+  .step-icon {
+    width: 50px;
+    height: 50px;
+  
+  }
+  
+  .process-step h4 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .process-step p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+
+/* responsive for small screen */
+
+  @media screen and (max-width: 768px) {
+    .proces-container{
+      padding: 50px;
+    }
+  }

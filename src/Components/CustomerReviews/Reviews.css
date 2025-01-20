@@ -1,0 +1,192 @@
+/* General Swiper Styles */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Allow the card to take its full height */
+}
+
+/* Adjust the review card size on smaller screens */
+@media screen and (max-width: 768px) {
+  .review-card {
+    width: 100%; /* Full width for small screens */
+    max-width: none; /* Remove any max-width constraints */
+    margin: 0 auto; /* Center the card */
+    padding: 20px; /* Adjust padding for smaller screens */
+    min-height: auto; 
+  }
+
+  .review-card p {
+    -webkit-line-clamp: unset; 
+    overflow: visible; 
+  }
+}
+
+
+
+/* Hide navigation arrows on small screens */
+@media screen and (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none; /* Hide arrows on small screens */
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: block; /* Show arrows on larger screens */
+  }
+}
+
+/* General Styles for the Review Section */
+.reviews-section {
+  text-align: center;
+  background-color: #F2E7FE;
+  padding: 50px 20px;
+}
+
+.reviews-section h2 {
+  font-size: 44px; /* Larger font for section title */
+  font-weight: 700;
+  color: #4D3EE9;
+  margin-bottom: 40px;
+}
+
+.review-card {
+  width: 100%;
+  max-width: 900px;
+  min-height: 305px; /* Set a minimum height */
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  margin: auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.review-card:hover {
+  transform: scale(1.02); /* Add a subtle hover effect */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.review-card blockquote {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.review-card p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 7; /* Show up to 7 lines for long text */
+  -webkit-box-orient: vertical;
+}
+
+.review-card .review-info {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.review-card .review-info .avatar-placeholder {
+  width: 50px;
+  height: 50px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.review-card .review-info h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.review-card .review-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #777777;
+}
+
+
+
+.swiper-pagination-bullet {
+  background: #5a55ca;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #5a55ca;
+}
+
+@media screen and (max-width: 1024px) {
+  .reviews-section h2 {
+    font-size: 2rem; /* Adjust title font size */
+  }
+
+  .review-card {
+    max-width: 90%; /* Allow cards to shrink */
+    height: auto; /* Let height adjust based on content */
+    padding: 20px;
+  }
+
+  .review-card p {
+    font-size: 0.95rem;
+    -webkit-line-clamp: 9; /* Show more lines for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .review-card {
+    max-width: 100%; /* Full width on very small screens */
+    padding: 15px;
+    height: auto;
+    min-height: 0;
+  }
+
+  .review-card p {
+    font-size: 0.85rem;
+    -webkit-line-clamp: none; /* Allow full content on small screens */
+  }
+
+  .review-card .review-info h4 {
+    font-size: 0.9rem; /* Smaller font for small screens */
+  }
+
+  .review-card .review-info p {
+    font-size: 0.8rem;
+  }
+}
+
+
+.avatar-placeholder img {
+  border-radius: 50%;
+  border: 2px solid #5a55ca;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

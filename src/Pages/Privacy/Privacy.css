@@ -1,0 +1,22 @@
+.privacy-heading{
+    font-family: Montserrat;
+font-size: 56px;
+font-weight: 700;
+line-height: 76px;
+letter-spacing: -0.015em;
+text-align: center;
+color: #0E009D;
+margin-top: 70px;
+
+
+}
+*{
+    font-family: Montserrat;
+}
+
+.privacy-para{
+    font-size: 20px;
+    max-width: 1200px;
+    align-items: center;
+    padding: 50px;
+}

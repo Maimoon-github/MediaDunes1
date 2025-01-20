@@ -1,0 +1,8 @@
+.Concept-hero {
+    background-image: url("https://s3-alpha-sig.figma.com/img/a44f/1bf9/496780b3d98f14e2ef3791d1944fb3f2?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jOPrJKuTAS3K1MT1JxSLXUxBZK0KhYl4mvNoxdlOFyZ27QsLTp2yuElwgtD6QYNAFxGQou2XZq2sPq46S7LRFL4vVzuDeWcutLMDQY6Hw~sqTCqkbQbYDf3Nn68son05A~dtJOBL3gYcpKxstCwZPqYGRzFeb7jV8kqJFJVO8Ln4eCFR1AoRB6VFaF1dMzF6yue1JEPDxY~-aZ7aVCdEzpQ0ratlUEH~s~EnBIyode9xUSsnuc~LKiIMWEICA1tjt7lFlt0nKElSotfH7RT3axEzp43hGP4Ai6DkUSAeojqNs9pSFdohkNisvGG9zyo~ANzTi~OraHYUrFTBgxhasw__");
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    width: 100%;
+    height: 700px;
+  }

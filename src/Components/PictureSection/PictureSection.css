@@ -1,0 +1,60 @@
+.pic-placeholder {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.pic-placeholder img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  color: #fff;
+}
+
+.overlay-content .cta-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #6c5ce7;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.overlay-content .cta-button:hover {
+  background-color: #4834d4;
+}
+
+.overlay-content h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .overlay-content h3 {
+    font-size: 1.2rem;
+    padding: 0 15px;
+  }
+
+  .overlay-content .cta-button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}

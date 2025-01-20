@@ -1,0 +1,39 @@
+.infographic-hero {
+  background-image: url("https://s3-alpha-sig.figma.com/img/34b7/dfe5/c002c1cdcab27623b611ec6668ace0f9?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ws65~87BbQLNWn5hDPyfqYMuRxCaUVCDGuysvM2XOqNCRSkx4l4DXVtrx3Z5mZm6dL0W903PNU3Y3hPNRIIDcGhU1nF-OjKHyafdbAnIP4ws8-OoiEaBd7vy1zq7lsmnnim9CZWP9qi50zd2QK~1cXpKXixHhaStHwJNrkk1Vksozcs4P1giOanVHJhhIMK4fsgvNI7Pozv~A40FgGC63dop8hFhm0FO8Vhy4ved4QO9Nst1UK4v-xJ4VOfEulBNLi2PhZwwoDfewt-fCH3dp8Ytn~5OxAXcUrDOFsTtqzqKkCPyP75gRGgNcNcd10~X8KAzNZlx6ZYKEJRwQfGIuA__");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+  color: #333;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c2c8c;
+}
+
+.hero-description {
+  margin: 20px 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.hero-buttons .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+
+@media (max-width: 990px) {
+  .text-section{
+    background: white;
+  }
+
+}

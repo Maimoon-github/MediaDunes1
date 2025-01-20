@@ -1,0 +1,8 @@
+.Digitaldesign-hero {
+    background-image: url("https://s3-alpha-sig.figma.com/img/da8c/1ac2/7a059a041739b94790c748dcedb97ccb?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jGZ0JbN9m-DsBk3zrQI5a33CFLMxM5QQjaN4c2gh7pfzcJacg6aoC2tCWFoFhApuexbDvusXfo5qbl2O4Qw8~ui80Ib9vSUQlIBDXWYp~NYwWqmJiQa86naUXy~e4asxL-3BecXMjJMpjb7FAxaQQNQJkNae1scG6H7uUIlS-KVAAmbQLdSA4AlAKPobIGm4F8mZsr-8XL9x1cseaLko0ie9B~ZUn5TCrKb4ZyZcj5ZyQUEgECIkjHvJx73ua3ErnZyM37Yv6MiaM~iAfLWXOESXSNduWgnIdYWzl1kFE6YENMfXvy7mqDNIc1ioEnrtZ9W2Z7Sm7wcc4HrmPEiHqA__");
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    color: #333;
+    height: 700px;
+  }

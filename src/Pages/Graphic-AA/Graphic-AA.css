@@ -1,0 +1,237 @@
+.graphic-banner {
+    position: relative;
+    /* height: 100vh;  */
+    overflow: hidden;
+  }
+ 
+  .text-overlay {
+    position: absolute; /* Make it overlap the image */
+    top: 9%;
+    left: 9%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Styles for title */
+  .text-overlay .title {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0E009D;
+  }
+  
+  /* Styles for description */
+  .text-overlay .description-admin {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #312948B2;
+  }
+  
+  /* Styles for buttons */
+  .text-overlay .btn {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+  }
+  .btn-blue{
+    color: white;
+    background-color: #4D3EE9;
+  }
+  .btn-trans{
+    color: #00000080;
+    background-color: transparent;
+    outline: 1.4px solid #00000080;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  /* For smaller screens (tablets, mobile) */
+  @media (max-width: 1200px) {
+    .text-overlay {
+        top: 7%;
+        left: 7%;
+    }
+    .text-overlay .title{
+        font-size: 36px;
+    }
+  }
+  @media (max-width: 980px) {
+    .text-overlay{
+        max-width: 450px;
+    }
+    .text-overlay {
+        top: 5%;
+        left: 5%;
+    }
+    .text-overlay .description-admin{
+        /* margin-bottom: 0; */
+        font-size: 16px;
+    }
+    .text-overlay .title{
+        font-size: 27px;
+    }
+  }
+  @media (max-width: 768px) {
+    .graphic-banner {
+      height: auto; /* Adjust height to content */
+    }
+  
+    .text-overlay {
+      top: 2%;
+      left: 2%;
+      /* transform: translate(-50%, -50%); Center on smaller screens */
+      max-width: 400px; /* Reduce max-width for smaller screens */
+    }
+  
+    .text-overlay .title {
+      font-size: 1.8rem; /* Smaller title size */
+    }
+  
+    .text-overlay .description {
+      font-size: 1rem; /* Smaller description size */
+    }
+  
+    .text-overlay .btn {
+      font-size: 0.9rem; /* Smaller buttons */
+      padding: 8px 16px;
+    }
+  }
+  
+  /* For very small screens (mobile phones) */
+  @media (max-width: 576px) {
+    .text-overlay .title {
+      font-size: 1.5rem;
+    }
+  
+    .text-overlay .description {
+      font-size: 0.9rem;
+    }
+  
+    .text-overlay .btn {
+      font-size: 0.8rem;
+    }
+  }
+  
+
+
+  .design-workflow-section {
+    padding: 60px 0; /* Add space above and below */
+  }
+  
+  .subheading {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+
+
+  /* graphic design and admin assistant service section */
+  .assistance-services-section {
+    padding: 60px 0;
+    border-bottom: 1px solid;
+   
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .service-card {
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .graphic-placeholder {
+    width: 100%;
+    height: 260px;
+    border-radius: 10px;
+  }
+  
+  .service-title {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .service-description {
+    text-align: left;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .btn-outline-primary {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+
+  /* Graphic design and admin assistant service section PARAGRAPH */
+  .assistance-service-container {
+    border: 2px solid #4D3EE9;
+    background: linear-gradient(90deg, #4D3EE9, #4D3EE94D);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1160px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .assistance-service-card {
+    background: transparent;
+    border: none;
+    color: white;
+  }
+  
+  .assistance-service-card h5 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  
+  .assistance-service-card h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    max-width: 750px;
+  }
+  
+  .assistance-service-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 600;
+  }
+  

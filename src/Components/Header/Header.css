@@ -1,0 +1,121 @@
+/* Announcement Bar */     
+*{
+  font-family: Montserrat;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  background-color: #f2e7fe; /* Match the header background */
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.head-con{
+  max-width: 1420px;
+}
+
+.dropdown-item {
+  color: #2e0097;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+
+.dropdown-item:hover {
+  background-color: #e3d8f9;
+  color: #2e0097;
+  text-decoration: none;
+}
+
+
+
+.announcement-bar {
+    background-color: #2e0097; /* Purple background */
+    color: #fff; /* White text */
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  .announcement-bar .highlight-link {
+    color: #ffffff; /* Highlight text */
+    text-decoration: none;
+    
+  }
+  
+  /* Main Header */
+  .main-header {
+    background-color: #F2E7FE; /* Light lavender background */
+    padding: 15px 0;
+  }
+  
+  .logo {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .brand-name {
+    font-size: 1.5rem;
+    color: #5238fc;
+    font-weight: bold;
+  }
+  
+  /* Navbar Links */
+  .navbar-nav .nav-link {
+    color: #2e0097 ;
+    font-weight: 500;
+    margin-right: 15px;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #2e0097 !important;
+    text-decoration: underline;
+  }
+  
+  /* Contact Button */
+  .contact-btn {
+    background-color: #5238fc;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+  }
+  
+  .contact-btn:hover {
+    background-color: #3e2db5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .navbar-nav .nav-link{
+      font-size: 13px;
+    }
+  }
+  @media (max-width: 768px) {
+    .navbar-nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    .contact-btn {
+      margin: 10px auto;
+      margin-left: 130px;
+    }
+
+    .announcement-bar {
+        font-size: 9px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+

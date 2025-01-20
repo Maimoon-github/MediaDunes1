@@ -1,0 +1,246 @@
+/* Container Styling */
+.joine-container {
+margin-top: 72px;
+    flex-direction: row;
+    background-color: #F2E7FE;
+    padding: 40px 40px 2px 40px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    gap: 20px; 
+    align-items: center; 
+  }
+  
+
+
+/* When scrolled into view */
+.joine-container.active {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move to original position */
+}
+
+/* Hover animation */
+.joine-container.active:hover {
+  animation: hoverEffect 0.8s ease-in-out;
+}
+
+@keyframes hoverEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03); /* Slight zoom in */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+  /* Text Section */
+  .join-texxt-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+    text-align: left;
+  }
+  
+  .joining-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: #3d3c3c;
+    line-height: 1.5;
+    margin: 20px 0;
+  }
+  
+ 
+  
+  .cntcts-btn {
+    background-color: #5238fc;
+    color: #fff;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 155px;
+    margin-top: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .cntcts-btn:hover {
+    background-color: #3b1dfa;
+    transform: translateY(-3px); /* Slight hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image Section */
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section-image {
+    max-width: 100%;
+    height: auto;
+
+  }
+  
+
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .joine-container {
+      flex-direction: column;
+      text-align: center; /* Center text for smaller screens */
+      height: auto; /* Flexible height */
+    }
+  
+    .join-texxt-container {
+      margin-bottom: 20px; /* Add spacing below text */
+    
+    }
+  
+    .joining-text {
+      font-size: 28px; /* Adjust font size */
+    }
+  
+    .cntcts-btn {
+      font-size: 14px;
+      padding: 12px 24px;
+    }
+  
+    .image-section {
+      justify-content: center; /* Center image on smaller screens */
+    }
+  
+    .section-image {
+      max-width: 90%; /* Restrict image size */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .joining-text {
+      font-size: 20px; /* Smaller text for smaller devices */
+      line-height: 1.4;
+      margin: 10px 0;
+  
+    }
+  
+    .cntcts-btn {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  
+    .section-image {
+      max-width: 85%; /* Scale down image */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .joine-container {
+      padding: 40px 40px 2px 40px; 
+      gap: 15px;
+    }
+  
+    .joining-text {
+      font-size: 14px;
+      margin: 10px 0;
+      width: 90%;
+    }
+  
+    .cntcts-btn {
+      font-size: 12px;
+      /* padding: 8px 16px; */
+    }
+  
+    .section-image {
+      max-width: 100%; /* Further reduce image size */
+    }
+  }
+
+  
+
+
+
+
+
+
+
+
+  /* react model  */
+  /* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.modal-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.modal-form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  background-color: #2d76f9;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: #1b5bc2;
+}

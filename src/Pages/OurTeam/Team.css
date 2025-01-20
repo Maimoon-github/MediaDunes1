@@ -1,0 +1,33 @@
+/* TeamPage.css */
+
+.team-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0E009D; /* Customize color for title */
+  }
+  
+  .team-subtitle {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .team-section-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .team-section-description {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+
+  @media (max-width: 576px) {
+.team-subtitle{
+  font-size: 12px;
+
+}
+  }

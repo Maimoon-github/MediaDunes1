@@ -1,0 +1,42 @@
+.graphic-design-cost {
+    color: #333;
+  }
+  
+  .cost-title {
+    color: #4D3EE9;
+  }
+  
+  .cost-subtitle {
+    /* font-size: 1.2rem; */
+    color: #0E009D;
+  }
+  
+  .stat-card {
+    height: 193px;
+    background-color: #F2E7FE; /* Light purple */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #4D3EE9;
+  }
+  
+  .stat-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #6c63ff;
+  }
+  
+  .stat-value {
+    border-top: 1px solid #D9B7FF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #2c2c8c;
+  }
+  
+  .stat-description {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  

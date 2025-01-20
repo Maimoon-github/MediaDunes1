@@ -1,0 +1,17 @@
+.Printdesign-hero {
+    background-image: url("https://s3-alpha-sig.figma.com/img/a0a7/d789/1336197bce510a4f5c6029d618bde663?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gklnSu2rXUZc8ITH9qfen6a-cHVXyz1dSwI3jyIGw1LlvfbpU6hKY95eOsmOBBNl4hMP6IdSUFqPo-1s6m~Pd9yQ8b~wUmA9eTnJ2jb5C1pc2vlPwh1d6On3UJQIbOl2dxMdCFyJBIFFfKOFubGkNeUULkuKznOP-OjxxVA4VmEss629EfRAkd7~v2mj-LuGFI4tu~pO8aly0vGmvYLuwg8qzhJgAoHzg9VoFQprF1kMwJH-loi6qO7saoN~4eXkViLbmI2xhfonE~Igd4na-o4lbaAE5i7sg6s42aPngRWsbjKmLhM9Z4PsQG66QAGH9wlJivBLy3w25BEEcbFSOA__");
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    color: #333;
+    height: 600px;
+  }
+
+  .btn-price{
+    color: #4D3EE9;
+    outline: 1px solid #4D3EE9;
+  }
+  .btn-price:hover{
+    color: white;
+    background-color: #4D3EE9;
+  }

@@ -1,0 +1,92 @@
+.audit-h1 {
+    font-family: Montserrat;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 84px;
+    color: #0E009D;
+    text-align: left;
+    
+  }
+  
+  .checklist li {
+    color: #312948B2;
+font-size: 26px;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: -0.015em;
+text-align: left;
+
+  }
+  
+  .audit-image {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .audit-image::before {
+    content: '⭐';
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    color: #4D3EE9; /* Star decoration color */
+  }
+  
+  .audit-image img {
+    max-width: 80%; /* Adjust the size to fit well */
+  }
+  
+
+
+  /* form */
+
+  .audit-h{
+    font-family: Montserrat;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 76px;
+    letter-spacing: -0.015em;
+    text-align: center;
+    color: #F2E7FE;
+  }
+  
+  .bgg-beige {
+    background-color: #F2E7FE; /* Beige color for the form background */
+  }
+  
+  .btn-audit {
+    background-color: #4D3EE9; /* Brown color for the button */
+    color: white;
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 600;
+text-align: center;
+
+  }
+  
+  .btn-audit:hover {
+    background-color: #0E009D;
+    color: white; /* Darker shade for hover */
+  }
+    
+  .labels{
+    font-family: Montserrat;
+font-size: 22px;
+font-weight: 600;
+line-height: 40px;
+letter-spacing: -0.015em;
+text-align: center;
+color: #312948B2;
+
+  }
+
+  .labels span{
+color: #4D3EE9;
+
+  }
+
+  @media (max-width: 768px) {
+    .audit-h1{
+      font-size: 33px;
+      line-height: 1.5;
+    }
+  }

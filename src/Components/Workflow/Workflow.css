@@ -1,0 +1,98 @@
+/* Workflow Section */
+.workflow-section {
+    background-color: white; /* Light background for better contrast */
+  }
+  
+  .workflow-title b {
+    font-size: 41px;
+    font-weight: 600;
+
+  }
+  .workflow-title {
+    font-size: 34px;
+    font-weight: 400;
+    color: #0E009D; /* Primary Blue Color */
+  }
+  
+ 
+  
+  /* Workflow Content */
+  .workflow-content {
+    display: flex;
+   
+    gap: 80px; /* Spacing between elements */
+    justify-content: center; /* Centers items horizontally */
+  }
+  
+  /* Workflow Box */
+  .workflow-box {
+    background-color: #F2E7FE; /* Light purple background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 555px;
+    height: 615px;
+    text-align: left;
+    padding: 20px; /* Adds some padding for content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Aligns content within the box */
+  }
+  
+  .workflow-box h4 {
+    color: #0E009D; /* Bold heading color */
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px; /* Spacing below the heading */
+  }
+  
+  .workflow-box p {
+    color: #000000CC; /* Text color */
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px; /* Spacing between paragraphs */
+  }
+  
+  /* Arrows */
+  .workflow-arrows {
+    font-size: 80px;
+    color: #0E009D;
+  }
+  
+  .arrow {
+    margin: 15px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 700px) {
+    .workflow-box p{
+        font-size: 19px;
+    }
+    .workflow-title b,
+    .workflow-title{
+        font-size: 18px;
+    }
+    .workflow-box h4{
+        font-size: 20px;
+    }
+  }
+  @media (max-width: 1200px) {
+    .workflow-box {
+      width: 100%; /* Full width for smaller screens */
+      height: auto; /* Height adapts to content */
+    }
+
+  
+    .workflow-content {
+      flex-direction: column; /* Stacks boxes vertically */
+      align-items: center; /* Centers boxes */
+    }
+  
+    /* Hide arrows on smaller screens */
+    .workflow-arrows {
+      display: none;
+    }
+    .workflow-content{
+        flex-wrap: wrap;
+    }
+  }
+  

@@ -1,0 +1,148 @@
+:root {
+  --heading-color: #0E009D; /* Example: Blue */
+  --body-color: #F2E7FE; /* Example: Lighter Blue */
+  --buttons-color: #4D3EE9; /* Example: Light Gray */
+  --text-color: #000000B2; /* Example: Dark Gray */
+}
+
+
+
+
+body {
+  font-family: Montserrat;
+  margin: 0;
+  padding: 0;
+}
+
+
+.video-para{
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.blue{
+  color: var(--heading-color);
+}
+
+.cta-buttons{
+display: flex;
+gap: 30px;
+justify-content: center;
+}
+.call-btn{
+  width: 222px;
+height: 61px;
+font-weight: 700;
+border: none;
+border-radius: 6px ;
+  color: white;
+ background-color: #4D3EE9;
+}
+
+
+.video-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.feature-para{
+  font-size: 26px; 
+  font-weight: 700;
+}
+
+
+.play-button {
+  font-size: 64px;
+  color: #2e3192;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .video-placeholder {
+
+    height: 150px;
+  }
+
+  .play-button {
+    font-size: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .video-container {
+    max-width: 100%;
+  }
+  .feature-para{
+    font-size: 15px;
+  }
+  .blue{
+    font-size: 24px;
+  }
+  .call-btn{
+    width: 138px;
+    height: 37px;
+    font-size: 10px;
+  }
+  .video-para{
+    
+      font-size: 15px;
+      font-weight: 600;
+  }
+  .cta-buttons{
+    gap: 10px;
+  }
+}
+
+
+
+
+
+
+
+/* Video placeholder styling */
+.video-placeholder {
+  position: relative;
+  width: 100%;
+  /* max-width: 800px; */
+  margin: 0 auto;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Custom Play Button */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 64px;
+  /* color: rgba(255, 255, 255, 0.9); */
+  cursor: pointer;
+  z-index: 2;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.play-button:hover {
+  color: #ffffff;
+  background-color: #4D3EE9;
+}
+
+/* Hide the play button when the video is playing */
+.play-button.hidden {
+  display: none;
+}
+

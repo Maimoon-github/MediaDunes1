@@ -1,0 +1,94 @@
+/* Container for the entire gallery */
+.work-gallery {
+  margin-top: 50px;
+  background-color: #F2E7FE;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Title styling */
+.gallery-title {
+  font-weight: 600;
+  color: #0E009D;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  font-size: 42px;
+}
+
+/* Marquee animation container */
+.gallery-marquee {
+  overflow: hidden;
+  /* white-space: nowrap; */
+}
+
+/* Flexbox for gallery items in a row */
+.gallery-container {
+  display: flex;
+  gap: 20px;
+  animation: scroll 20s linear infinite;
+}
+
+/* Individual gallery items */
+.gallery-item {
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.gallery-item p {
+  color: #0E009D;
+  margin-top: 10px;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+/* Keyframes for scrolling effect */
+@keyframes scroll {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .gallery-container {
+      flex-direction: column;
+      animation: none; /* Disable marquee on small screens */
+  }
+
+  .gallery-item img {
+      width: 100%;
+      height: auto;
+  }
+}
+
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .gallery-container {
+      flex-direction: column; /* Stack items vertically */
+      animation: none; /* Disable marquee animation */
+  }
+
+  .gallery-item {
+      flex: 1 0 auto; /* Adjust flex properties */
+  }
+
+  .gallery-item img {
+      width: 100%; /* Make images responsive */
+      height: auto;
+  }
+}
+
+

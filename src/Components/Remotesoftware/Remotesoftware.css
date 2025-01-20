@@ -1,0 +1,85 @@
+.remote-teams-container {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .remote-teams-container h2 {
+    font-size: 2rem;
+    color: #3a3a3a;
+    margin-bottom: 10px;
+  }
+  
+  .remote-teams-container .description {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 40px;
+  }
+  
+  .challenges-grid {
+    max-width: 1160px;
+    margin: 0 auto; /* Centers the grid */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+  
+  .challenge-card {
+    background-color: #f2e7fe35;
+    border: 1px solid #000000;
+    padding: 20px;
+    display: flex; /* Aligns items horizontally */
+    align-items: center; /* Vertically centers content */
+    gap: 15px; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .challenge-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .challenge-card .icon {
+    width: 168px;
+    height: 168px;
+    flex-shrink: 0; /* Prevents the icon from resizing */
+  }
+  
+  .challenge-card .text-content {
+    text-align: left; /* Aligns text to the left */
+  }
+  
+  .challenge-card h3 {
+    font-size: 24px;
+    color: #3a3a3a;
+    margin-bottom: 10px;
+  }
+  
+  .challenge-card p {
+    font-size: 18px;
+    color: #6c757d;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .remote-teams-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .remote-teams-container .description {
+      font-size: 0.95rem;
+    }
+  
+    .challenge-card {
+      flex-direction: column; /* Stacks icon and text vertically on smaller screens */
+      text-align: center;
+    }
+  
+    .challenge-card .text-content {
+      text-align: center;
+    }
+    .challenges-grid{
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+  }
+  

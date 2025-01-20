@@ -1,0 +1,138 @@
+.join-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px;
+}
+
+.cntct-btn {
+    background-color: #4D3EE9;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 222px;
+    height: 60px;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+.join-text {
+    font-weight: 700;
+    font-size: 24px;
+    width: 500px;
+    text-align: left;
+}
+
+.join-text-section {
+    /* background-image: url("backend-our-work.webp"); */
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover;
+    width: 1300px;
+    height: 648px;
+    border-radius: 6px;
+    background-color: #d1d1d1;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin: 0px 20px;
+}
+
+.join-text-container {
+    margin: 80px 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.join-text-section {
+    position: relative;
+    overflow: hidden;
+  }
+  
+
+
+@media only screen and (max-width: 990px) {
+    .join-text-section {
+        width: 696px;
+        height: 348px;
+        border-radius: 3px;
+        background-color: #d1d1d1;   
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+
+
+    .cntct-btn {
+        background-color: #4D3EE9;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        width: 130px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 12px;
+        margin: 14px 0px;
+    }
+
+    .join-text {
+        font-weight: 700;
+        font-size: 16px;
+        width: 320px;
+        text-align: left;
+    }
+
+    .join-text-container {
+        margin: 40px 80px;
+        display: flex;
+
+        flex-direction: column;
+        justify-content: left;
+    }
+}
+
+@media only screen and (max-width: 469px) {
+    .join-text-section {
+        width: 349px;
+        height: 174px;
+        border-radius: 1px;
+        background-color: #d1d1d1;   
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        margin: 0px 10px;
+    }
+
+
+    .cntct-btn {
+        background-color: #4D3EE9;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        width: 60px;
+        height: 20px;
+        font-weight: 600;
+        font-size: 6px;
+        margin: 8px 0px;
+    }
+
+    .join-text {
+        font-weight: 700;
+        font-size: 8px;
+        width: 160px;
+        text-align: left;
+    }
+
+    .join-text-container {
+        margin: 20px 40px;
+        display: flex;
+
+        flex-direction: column;
+        justify-content: left;
+    }
+    .join-container {
+        padding: 0px 48px 28px 48px;
+    }
+}

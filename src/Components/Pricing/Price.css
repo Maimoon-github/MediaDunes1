@@ -1,0 +1,258 @@
+/* Container */
+.pricing-container {
+  text-align: center;
+  padding: 40px;.pricing-section {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.pricing-section h1 {
+  font-size: 44px;
+  font-weight: 700;
+  color: #4D3EE9;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.pricing-section p {
+  font-size: 22px;
+  font-weight: 700;
+  color: #312948B2;
+  margin-bottom: 70px;
+}
+
+.pricing-card {
+  background-color: #F2E7FE;
+  padding: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  position: relative;
+  text-align: left;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+ 
+}
+
+.price-margin{
+  margin-top: 40px;
+}
+
+.pricing-card .tag {
+  /* position: absolute; */
+  margin-top: 0px;
+ margin-bottom: 20px;
+  background-color: #4D3EE9;
+  width: 161px;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+
+.pricing-card h3 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 42px;
+  color: #312948F5;
+  margin-bottom: 10px;
+}
+
+.pricing-card h2 {
+  font-size: 22px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.pricing-card .original-price {
+  text-decoration: line-through;
+  color: #a5a5a5;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.pricing-card ul {
+  padding: 0;
+  margin: 0 0 20px;
+  
+}
+
+.pricing-card ul li {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #6F697F;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.tick-mark {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+ outline: 1.5px solid #4D3EE9;
+  color: #4D3EE9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-size: 0.8rem; */
+  margin-right: 10px;
+}
+
+.demo-btnn {
+  background-color: #4D3EE9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.demo-btnn:hover {
+  background-color: #0E009D;
+  color: white;
+}
+
+
+
+.pricing-title {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #4a00e0;
+  margin-bottom: 10px;
+}
+
+.pricing-subtitle {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #6c757d;
+  margin-bottom: 30px;
+}
+
+/* Card Styling */
+.pricing-card {
+  background: #f2e7fe;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+}
+
+.center-card {
+  transform: scale(1.05); 
+}
+
+.card-header {
+  width: 150px;
+  height: 30px;
+  display: inline-block;
+  background: #4a00e0;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #312948f5;
+}
+
+.card-price {
+  font-size: 24px;
+  font-weight: 600;
+  color: #312948f5;
+  margin-bottom: 15px;
+}
+
+.original-price {
+  font-size: 18px;
+  text-decoration: line-through;
+  color: #6f697f;
+  margin-left: 10px;
+}
+
+.card-features {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  font-size: 16px;
+  color: #6c757d;
+}
+
+.card-features li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
+}
+
+.card-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  color: #4a00e0;
+  border: 2px solid #4a00e0;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-button {
+  width: 100%;
+  height: 54px;
+  font-size: 18px;
+  font-weight: 600;
+  background: #4a00e0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.card-button:hover {
+  background: #3a00b8;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  .pricing-title{
+    font-size: 35px;
+  }
+  .pricing-subtitle{
+    font-size: 20px;
+  }
+.pricing-section h1{
+  font-size: 20px;
+}
+.center-card{
+  transform: none;
+}
+.pricing-section p{
+  font-size: 12px;
+}
+}
+  max-width: 1400px;
+  margin: auto;
+}

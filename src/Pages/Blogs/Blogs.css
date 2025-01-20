@@ -1,0 +1,50 @@
+.blog-h {
+    color: #0E009D; /* Brown color for the title */
+    font-size: 56px;
+    font-weight: 700;
+}
+  
+  .category {
+    color: #312948B2;
+    font-weight: 500;
+    font-size: 12px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  .category:hover {
+    text-decoration: underline;
+    color: #0E009D;
+  }
+  
+  .image-placeholder {
+    background-color: #ddd;
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+  }
+  
+  .blog-feature h2 {
+    color: #312948F2;
+    font-size: 28px;
+    font-weight: 500;
+  }
+  
+  .blog-feature p {
+    color: #555;
+  }
+  
+  .text-mutedd {
+    color: #888;
+  }
+  
+
+
+  @media (max-width: 576px) {
+    .blog-h {
+      font-size: 28px;
+    }
+    .image-placeholders{
+     
+      height: 154px;
+    }
+  }
