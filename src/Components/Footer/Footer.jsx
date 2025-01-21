@@ -8,7 +8,7 @@ function Footer() {
       <div className="top">
         <div className="logo-details">
           {/* <i className="fab fa-slack"></i> */}
-          <div className="logo_foo"><img src="https://mediadunes.com/footer-logo.png" alt="" />
+          <div className="logo_foo"><a href="#"><img src="https://mediadunes.com/footer-logo.png" alt="" /></a>
           <p className='footer-p'>Marasi Drive 51, DAMAC
 Business Tower 907, 
 Business Bay, Dubai UAE</p>
@@ -26,23 +26,23 @@ Business Bay, Dubai UAE</p>
         <ul className="box">
           <li className="link_name">Company</li>
           <li><a href="#">Home</a></li>
-          <li><a href="#">Price</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Blogs</a></li>
+          <li><a href="/price">Price</a></li>
+          <li><a href="/contactus">Contact Us</a></li>
+          <li><a href="/blogs">Blogs</a></li>
         </ul>
         <ul className="box">
           <li className="link_name">Services</li>
-          <li><a href="#">App design</a></li>
-          <li><a href="#">Web design</a></li>
-          <li><a href="#">Logo design</a></li>
-          <li><a href="#">Banner design</a></li>
+          <li><a href="/ourwork">App design</a></li>
+          <li><a href="/Software-team">Web design</a></li>
+          <li><a href="/logos">Logo design</a></li>
+          <li><a href="/flyers">Banner design</a></li>
         </ul>
         <ul className="box">
           <li className="link_name">Account</li>
-          <li><a href="#">UI/UX Design</a></li>
-          <li><a href="#">Digital Ad Design</a></li>
-          <li><a href="#">Infographic Design</a></li>
-          <li><a href="#">Social Media Design</a></li>
+          <li><a href="/uiuxdesign">UI/UX Design</a></li>
+          <li><a href="/Digital-Design">Digital Ad Design</a></li>
+          <li><a href="/Infographic-Design">Infographic Design</a></li>
+          <li><a href="/Social-Media-Design">Social Media Design</a></li>
         </ul>
         {/* <ul className="box">
           <li className="link_name">Courses</li>
