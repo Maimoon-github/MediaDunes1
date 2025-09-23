@@ -63,7 +63,10 @@ INSTALLED_APPS = [
     # "shop",  # Commented out as 'shop' app is not present in the project structure
     # "django_filters",  # Commented out to avoid import errors
     # "drf_spectacular"  # Commented out to avoid import errors
+    'users',
 ]
+
+AUTH_USER_MODEL = "users.User"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -114,7 +117,12 @@ DATABASES = {
 # ---------------------------------------------------------------------
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 10,
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    ),
+    "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.IsAuthenticated",),
+    "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
+    "PAGE_SIZE": 20,
     'DEFAULT_THROTTLE_CLASSES': [
         'blogs.throttles.CommentAnonThrottle',
         'blogs.throttles.CommentUserThrottle',
@@ -130,6 +138,16 @@ REST_FRAMEWORK = {
 }
 
 # ---------------------------------------------------------------------
+# JWT Fields
+# ---------------------------------------------------------------------
+
+SIMPLE_JWT = {
+    "AUTH_HEADER_TYPES": ("Bearer",),
+    "ROTATE_REFRESH_TOKENS": True,
+    "BLACKLIST_AFTER_ROTATION": True,
+}
+
+# ---------------------------------------------------------------------
 # Internationalization & Timezone
 # ---------------------------------------------------------------------
 LANGUAGE_CODE = 'en-us'
@@ -142,11 +160,24 @@ USE_TZ = True
 # ---------------------------------------------------------------------
 CELERY_BROKER_URL = os.getenv("CELERY_BROKER_URL", "redis://127.0.0.1:6379/1")
 CELERY_RESULT_BACKEND = os.getenv("CELERY_RESULT_BACKEND", CELERY_BROKER_URL)
+DEFAULT_FROM_EMAIL = "no-reply@mediadunes.app"
+FRONTEND_BASE_URL = "https://app.medidunes.app"
 CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
 CELERY_ACCEPT_CONTENT = ["json"]
 CELERY_TASK_SERIALIZER = "json"
 CELERY_RESULT_SERIALIZER = "json"
 CELERY_TIMEZONE = TIME_ZONE
+
+
+# ---------------------------------------------------------------------
+# Security  Fields
+# ---------------------------------------------------------------------
+
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+SECURE_HSTS_SECONDS = 31536000
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_PRELOAD = True
 
 # ---------------------------------------------------------------------
 # Static & Default Fields

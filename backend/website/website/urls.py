@@ -30,11 +30,5 @@ urlpatterns = [
     # path('', include('pages.urls')),
     path("", include("blogs.urls")),
     # path("shop/", include("shop.urls"))
+    path("api/v1/", include("users.urls"))
 ]
-
-
-# sitemaps = {"posts": PostSitemap}
-
-# urlpatterns += [
-#     path("sitemap.xml", sitemap, {"sitemaps": sitemaps}, name="django.contrib.sitemaps.views.sitemap"),
-# ]
