@@ -20,21 +20,21 @@ from django.contrib.sitemaps.views import sitemap
 from blogs.sitemaps import PostSitemap
 
 # Customize the admin site appearance
-admin.site.site_header = "Royal Step Administration"
-admin.site.site_title = "Royal Step Admin Portal"
-admin.site.index_title = "Welcome to Royal Step Admin"
+admin.site.site_header = "Media Dunes Administration"
+admin.site.site_title = "Media Dunes Admin Portal"
+admin.site.index_title = "Welcome to Media Dunes Admin"
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('pages.urls')),
+    # path('', include('pages.urls')),
     path("", include("blogs.urls")),
-    path("shop/", include("shop.urls"))
+    # path("shop/", include("shop.urls"))
 ]
 
 
-sitemaps = {"posts": PostSitemap}
+# sitemaps = {"posts": PostSitemap}
 
-urlpatterns += [
-    path("sitemap.xml", sitemap, {"sitemaps": sitemaps}, name="django.contrib.sitemaps.views.sitemap"),
-]
+# urlpatterns += [
+#     path("sitemap.xml", sitemap, {"sitemaps": sitemaps}, name="django.contrib.sitemaps.views.sitemap"),
+# ]

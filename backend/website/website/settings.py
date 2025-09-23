@@ -24,7 +24,7 @@ import logging
 # ---------------------------------------------------------------------
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-CONDA_PREFIX = os.environ.get('CONDA_PREFIX') or r"C:\Users\maimo\miniconda3\envs\royalstep"
+CONDA_PREFIX = os.environ.get('CONDA_PREFIX') or r"C:\Users\maimo\miniconda3\envs\mediadunes"
 BIN_DIR = os.path.join(CONDA_PREFIX, "Library", "bin")
 
 if sys.platform == "win32":
@@ -54,15 +54,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.gis',         # GeoDjango
+    # 'django.contrib.gis',         # GeoDjango
     'rest_framework',
     'rest_framework.authtoken',
     'tinymce',
-    'pages.apps.PagesConfig',
+    # 'pages.apps.PagesConfig',  # Commented out as 'pages' app is not present in the project structure
     'blogs',
-    "shop", 
-    "django_filters", 
-    "drf_spectacular"
+    # "shop",  # Commented out as 'shop' app is not present in the project structure
+    # "django_filters",  # Commented out to avoid import errors
+    # "drf_spectacular"  # Commented out to avoid import errors
 ]
 
 MIDDLEWARE = [
